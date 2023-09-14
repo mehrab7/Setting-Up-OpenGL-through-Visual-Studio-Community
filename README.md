@@ -47,3 +47,14 @@ Now type this in the **Edit** text box (Note that each .lib is on a new line):
  ```
 
 4. Try to run OpenGL code. If you are able to run it without errors, congratulations. If not, continue on.
+
+
+## Additional Steps (If Needed)
+
+1. Paste `glut.h` into `C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\gl`. In your program you may need to rewrite your include statement to `#include<gl/glut.h>` instead of `#include<GL/glut.h>`. It depends on the name of the file `glut.h` is in, whether lower or uppercase GL.
+
+2. Paste `glut32.lib` into both the `x64` and `x86` files in `C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\um`
+
+3. In the **`Project>Properties`** window select **x64** from the dropdown menu. On the main screen in Visual Studio, select **x86** from the dropdown menu next to the debugger dropdown.
+
+    If this does not resolve your errors and red squigglies try out different combinations of the two platform dropdowns in the **Properties** window and on the main screen of the Visual Studio editor. The above configuration in Step 3. worked for me, your machine might be different.
