@@ -33,18 +33,18 @@ Create the `\GL` file if it doesn’t exist.
 
 2. In the new project go to **`Project>Properties`**.
 
-Select **All Configuration** from the **Configuration** dropdown menu on the top left corner.
-
-Select **`Configuration Properties>C/C++>Precompiled Headers`** and change **Precompiled Header** option’s value to **Not Using Precompiled Headers**.
+ Select **All Configuration** from the **Configuration** dropdown menu on the top left corner.
+ 
+ Select **`Configuration Properties>C/C++>Precompiled Headers`** and change **Precompiled Header** option’s value to **Not Using Precompiled Headers**.
 
 3. Still in **Properties**, Select **`Configuration Properties>Linker>Input`**. Now right click on **Additional Dependencies** found on right panel and click **Edit** from the dropdown menu.
 
-Now type this in the **Edit** text box (Note that each .lib is on a new line):
-```put this in edit
- opengl32.lib
- glu32.lib
- glut32.lib
- ```
+ Now type this in the **Edit** text box (Note that each .lib is on a new line):
+ ```put this in edit
+  opengl32.lib
+  glu32.lib
+  glut32.lib
+  ```
 
 4. Try to run OpenGL code. If you are able to run it without errors, congratulations. If not, continue on.
 
