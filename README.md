@@ -57,4 +57,4 @@ Create the `\GL` file if it doesn’t exist.
 
 3. In the **`Project>Properties`** window select **x64** from the dropdown menu. On the main screen in Visual Studio, select **x86** from the dropdown menu next to the debugger dropdown.
 
-    If this does not resolve your errors and red squigglies try out different combinations of the two platform dropdowns in the **Properties** window and on the main screen of the Visual Studio editor. The above configuration in Step 3. worked for me, your machine might be different.
+    If this does not resolve your errors and red squigglies try out different combinations of the two platform dropdowns in the **Properties** window and on the main screen of the Visual Studio editor. The above configuration in Step 3 worked for me, your machine might be different.
