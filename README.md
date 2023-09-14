@@ -26,3 +26,7 @@ Create the `\GL` file if it doesn’t exist.
 5. Paste `glut.dll` and `glut32.dll` in `C:\Windows\SysWOW64`.
 
 6. Paste `glut32.dll` to `C:\Windows\System32`.
+
+## Linking glut to Visual Studio
+
+1. Open a new project in Visual Studio. This can be done through the tab **File>New>Project...** and select the **Console App** Project Template.![project template](https://github.com/mehrab7/Setting-Up-OpenGL-through-Visual-Studio-Community/assets/98127515/e172399f-99c6-4021-904b-394dbbe47f97)
