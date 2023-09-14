@@ -30,3 +30,20 @@ Create the `\GL` file if it doesn’t exist.
 ## Linking glut to Visual Studio
 
 1. Open a new project in Visual Studio. This can be done through the tab **File>New>Project...** and select the **Console App** Project Template.![project template](https://github.com/mehrab7/Setting-Up-OpenGL-through-Visual-Studio-Community/assets/98127515/e172399f-99c6-4021-904b-394dbbe47f97)
+
+2. In the new project go to **`Project>Properties`**.
+
+Select **All Configuration** from the **Configuration** dropdown menu on the top left corner.
+
+Select **`Configuration Properties>C/C++>Precompiled Headers`** and change **Precompiled Header** option’s value to **Not Using Precompiled Headers**.
+
+3. Still in **Properties**, Select **`Configuration Properties>Linker>Input`**. Now right click on **Additional Dependencies** found on right panel and click **Edit** from the dropdown menu.
+
+Now type this in the **Edit** text box (Note that each .lib is on a new line):
+```put this in edit
+ opengl32.lib
+ glu32.lib
+ glut32.lib
+ ```
+
+4. Try to run OpenGL code. If you are able to run it without errors, congratulations. If not, continue on.
